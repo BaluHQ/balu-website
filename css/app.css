@@ -1,0 +1,60 @@
+.title{
+    width:200px;
+}
+
+
+.tabs-content {
+    padding-left: 200px;
+}
+
+select.insideTable {
+    vertical-align: middle;
+    margin: 0;
+}
+
+input.insideTable {
+    vertical-align: middle;
+    margin: 0;
+}
+
+
+a.insideTable {
+    vertical-align: middle;
+    margin: 0;
+}
+
+/* would be nice to get this working */
+select option[val="1"]{
+    background: red;
+}
+
+.customIconBar {
+@include icon-bar(
+
+  // Set the background color of the icon bar. Default: $icon-bar-bg.
+  $bar-bg: $icon-bar-bg,
+  //  Set the font color of the icon bar. Default: $icon-bar-font-color.
+  $bar-font-color: $icon-bar-font-color,
+  // Set the hover background color for the icon bar. Default: $icon-bar-hover-color.
+  $bar-hover-color,
+  // Set the color of the icons for the icon bar. Default: $icon-bar-icon-color
+  $bar-icon-color: $icon-bar-icon-color,
+  // Set the background of the color when the icon bar is clicked or tapped on (or items within the icon bar). Default: $icon-bar-active-color.
+  $bar-active-color,
+  // Set the padding for icon bar. Default: $icon-bar-item-padding.
+  $padding,
+  // Set the font-size of the icon bar. Default: $icon-bar-font-size.
+  $font-size,
+  // Set the size of the icons within the icon bar. Default: $icon-bar-icon-size.
+  $icon-size,
+  // Set the width of images within the icon bar. Default: $icon-bar-image-width
+  $image-width,
+  // Set the height of images within the icon bar. Default: $icon-bar-image-height
+  $image-height,
+  // Assign whether or not base styles usually associated with the icon bar to appear the way it usually does should be included. Default: true.
+  $base-style: true,
+  // Allow disabled icons. Default: false.
+  // If enabled add class disabled.
+  $disabled: false
+  );
+}
